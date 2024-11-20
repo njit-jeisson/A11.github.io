@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="speakers/c6_sampson.html">Speakers</a></li>
+            <li><a href="luncheons.html">Luncheons</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+                <ul>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Past Speakers</a></li>
+                    <li><a href="#">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>San Joaquin Valley Town Hall is a non-profit organization...</p>
+        </section>
+        <section>
+            <h2>Speaker of the Month</h2>
+            <p>Fossil Threads in the Web of Life<br>Scott Sampson<br>February</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Jeisson Arciniegas, November 19, 2024</p>
+    </footer>
+    <script>
+		$(document).ready(function () {
+			$('#nav_menu ul').slicknav({
+				prependTo: 'body',
+				label: 'Menu',
+				closeOnClick: true
+			});
+		});
+	</script>
+	
